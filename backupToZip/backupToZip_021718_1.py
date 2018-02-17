@@ -8,6 +8,7 @@ import zipfile, os
 
 def backupToZip(folder):
 	# back up the entire contents of `folder` into a zip file
+	# `folder` is a string path to a folder to be backed up
 	
 	folder = os.path.abspath(folder) # make sure the folder is an absolute path string
 
@@ -17,12 +18,17 @@ def backupToZip(folder):
 
 	while True:
 		zipFilename = os.path.basename(folder) + '_' + str(number) + '.zip'
-		if not os.path.exists(zipFilename):
+		if not os.path.exists(zipFilename): # check whether the file exists
 			break
 		number = number + 1
 
 	# TODO:  create the zip file
+	
+	
+	
 	# TODO:  cycle through entire folder tree and compress the files in each folder
+	
+
 	print('Done.')
 
 backupToZip('../docs/') # for testing
