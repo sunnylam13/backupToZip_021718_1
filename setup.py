@@ -11,7 +11,7 @@ config = {
 	'author_email': 'sunny.lam@gmail.com',
 	'version': '0.1',
 	'install_requires': ['nose'],
-	'packages': ['NAME'],
+	'packages': ['zipfile, os'],
 	'scripts': [],
 	'name': 'Rapid Backup to Zip'
 }
