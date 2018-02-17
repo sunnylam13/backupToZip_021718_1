@@ -4,6 +4,9 @@
 
 # backupToZip_021718_1.py - copies an entire folder and files within into a ZIP archive file, which adds an increment to the name each time it's done (i.e. creates a new numbered back up)
 
+# USAGE
+# python3 backupToZip_021718_1.py
+
 import zipfile, os
 
 def backupToZip(folder):
@@ -22,12 +25,12 @@ def backupToZip(folder):
 			break
 		number = number + 1
 
-	# TODO:  create the zip file
+	# create the zip file
 	
 	print('Creating %s...' % (zipFilename))
 	backupZip = zipfile.ZipFile(zipFilename,'w')
 
-	# TODO:  cycle through entire folder tree and compress the files in each folder
+	# cycle through entire folder tree and compress the files in each folder
 	# use `os.walk()`
 	
 	for foldername,subfolders,filenames in os.walk(folder):
