@@ -25,5 +25,3 @@ ABSP:  341
 os.path.basename()
 
 * https://docs.python.org/2/library/os.path.html
-
-* 
